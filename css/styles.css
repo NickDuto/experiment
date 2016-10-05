@@ -1,0 +1,263 @@
+body {
+  font-family: arial;
+  background: #f8f9fb;
+}
+
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#fixed-fix {
+  height: 53px;
+  width: 100%;
+  display: none;
+}
+
+#top-bar {
+  height: 70px;
+  width: 100%;
+  background-color: #111111;
+}
+
+nav {
+  z-index: 2;
+  height: 53px;
+  width: 100%;
+  background-color: #eceff3;
+}
+
+nav ul:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+nav li {
+  position: relative;
+  float: left;
+  list-style: none;
+  color: #111111;
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+}
+
+nav li:hover {
+  color: #fff;
+  background-color: #c75408;
+  transition: color .15s ease-out, background .15s ease-in;
+}
+
+
+
+.wrapper {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#recent {
+  position: relative;
+}
+
+#recent h2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  color: #c75408;
+  position: relative;
+  display: block;
+}
+
+#recent h2:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+#recent #recent-line-top {
+  border-top: 2px solid #787878;
+  width: 924px;
+  height: 0px;
+  bottom: 43px;
+  position: relative;
+  float: right;
+}
+
+#recent-line-bottom-left {
+  border-top: 2px solid #787878;
+  width: 515px;
+  height: 0px;
+  bottom: 53px;
+  position: absolute;
+  float: left;
+
+  background: red;
+  z-index: 300;
+}
+
+
+p {
+  position: relative;
+  float: right;
+
+}
+
+#recent-line-bottom-left:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+
+#recent-line-bottom-right {
+  border-top: 2px solid #787878;
+  width: 515px;
+  height: 0px;
+  bottom: 43px;
+
+
+  background: red;
+  z-index: 300;
+
+}
+
+#recent #recent-line-top:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.container {
+  overflow: hidden;
+}
+
+
+.recent-wrapper {
+  float: left;
+  margin-left: 15px;
+  position: relative;
+
+}
+
+@keyframes left{
+  from{transform: translateX(0)}
+  to{transform: translateX(-291px)}
+}
+
+.recent-wrapper h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  margin-top: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  width: 165px;
+  position: relative;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.recent-wrapper h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  right: 15px;
+  bottom: 24px;
+}
+
+.recent-wrapper img {
+  float: right;
+  margin-top: 20px;
+  height: 45px;
+}
+
+.recent-wrapper:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.recent-car {
+  height: 173px;
+  width: 266px;
+  background: skyblue;
+}
+
+.recent-first {
+  margin-left: 0;
+}
+
+#left-btn {
+  float: left;
+  position: relative;
+  bottom: 23px;
+  left: 520px;
+
+}
+#right-btn {
+  float: right;
+    position: relative;
+      bottom: 23px;
+      right: 520px;
+
+}
+
+.glyphicon-menu-left, .glyphicon-menu-right {
+  color: #111;
+  font-size: 30px;
+}
+
+.carousel-indicators { position: relative;  top: 4px; z-index: 0}
+.carousel-indicators .active {background: #c75408;}
+.carousel-indicators li {
+  background: #111;
+}
