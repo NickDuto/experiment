@@ -211,7 +211,7 @@ p {
   color: white;
   position: absolute;
   right: 15px;
-  bottom: 24px;
+  top: 198px;
 }
 
 .recent-wrapper img {
@@ -227,10 +227,20 @@ p {
 }
 
 .recent-car {
-  height: 173px;
+  height: 165px;
   width: 266px;
   background: skyblue;
+  overflow:hidden;
+        float:left;
+        background-size:cover;
+        background-color: #EEEEEE;
+        background-position: center 25%;
+        background-repeat: no-repeat;
+        display: block;
+
 }
+
+
 
 .recent-first {
   margin-left: 0;
