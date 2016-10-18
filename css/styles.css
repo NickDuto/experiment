@@ -161,11 +161,8 @@ p {
   width: 515px;
   height: 0px;
   bottom: 43px;
-
-
   background: red;
   z-index: 300;
-
 }
 
 #recent #recent-line-top:after {
@@ -173,22 +170,16 @@ p {
   content: "";
   clear: both;
 }
-.container {
-  overflow: hidden;
-}
+
 
 
 .recent-wrapper {
   float: left;
   margin-left: 15px;
   position: relative;
-
 }
 
-@keyframes left{
-  from{transform: translateX(0)}
-  to{transform: translateX(-291px)}
-}
+
 
 .recent-wrapper h4 {
   font-family: 'Open Sans', sans-serif;
@@ -229,21 +220,12 @@ p {
 .recent-car {
   height: 165px;
   width: 266px;
-  background: skyblue;
   overflow:hidden;
-        float:left;
-        background-size:cover;
-        background-color: #EEEEEE;
-        background-position: center 25%;
-        background-repeat: no-repeat;
-        display: block;
-
-}
-
-
-
-.recent-first {
-  margin-left: 0;
+  float:left;
+  background-size:cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  display: block;
 }
 
 #left-btn {
@@ -251,14 +233,14 @@ p {
   position: relative;
   bottom: 23px;
   left: 520px;
-
+  z-index: 50;
 }
 #right-btn {
   float: right;
     position: relative;
       bottom: 23px;
       right: 520px;
-
+      z-index: 50;
 }
 
 .glyphicon-menu-left, .glyphicon-menu-right {
@@ -266,7 +248,12 @@ p {
   font-size: 30px;
 }
 
-.carousel-indicators { position: relative;  top: 4px; z-index: 0}
+
+
+.carousel-indicators { position: relative;  top: 4px; border: 1px solid red;}
+
+
+
 .carousel-indicators .active {background: #c75408;}
 .carousel-indicators li {
   background: #111;

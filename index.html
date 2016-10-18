@@ -14,10 +14,6 @@
 </head>
 <body>
 <section id="recent" ng-controller="RecentController">
-
-
-
-
   <div class="container recent-container">
 
     <h2>RECENT VEHICLES</h2><div id="recent-line-top"></div>
@@ -32,43 +28,37 @@
             <div class="carousel-inner" role="listbox">
     <!-- Use ng-repeat -->
               <div id="slide-1" class="item active">
-
-
-
-                <div class="recent-wrapper"  ng-show="{{car.k < 4}}" ng-repeat="car in cars" id="item-1-{{car.k}}">
-                  <div style="background-image: url({{car.pic}});" ng-show="car.pic" class="recent-car"></div>
-                  <div class="clearfix">
-
+                <a href="#">
+                  <div class="recent-wrapper"  ng-show="{{car.k < 4}}" ng-repeat="car in cars" id="item-1-{{car.k}}">
+                    <div style="background-image: url({{car.pic}});" ng-show="car.pic" class="recent-car"></div>
+                    <div class="clearfix"></div>
+                    <h4 ng-show="car.year">{{car.year}} {{car.make}} {{car.model}}</h4>
+                    <img ng-show="car.price" src="img/blue-tag.png" alt="price tag" />
+                    <h5 ng-show="car.price">{{car.price}}</h5>
                   </div>
-                  <h4 ng-show="car.year">{{car.year}} {{car.make}} {{car.model}}</h4>
-                  <img ng-show="car.price" src="img/blue-tag.png" alt="price tag" />
-                        <h5 ng-show="car.price">{{car.price}}</h5>
-                </div>
-
+                </a>
               </div><!-- item -->
 
               <div id="slide-2" class="item">
-                <div class="recent-wrapper" ng-hide="{{car.k < 4 || car.k > 7}}" ng-repeat="car in cars" id="item-2-{{car.k}}">
-                  <div style="background-image: url({{car.pic}});" ng-show="car.pic" class="recent-car"></div>
-                  <div class="clearfix"></div>
-                  <h4 ng-show="car.year">{{car.year}} {{car.make}} {{car.model}}</h4>
-
-
-                  <img ng-show="car.price" src="img/blue-tag.png" alt="price tag" />
-
-                        <h5 ng-show="car.price">{{car.price}}</h5>
-                </div>
+                <a href="#">
+                  <div class="recent-wrapper" ng-hide="{{car.k < 4 || car.k > 7}}" ng-repeat="car in cars" id="item-2-{{car.k}}">
+                    <div style="background-image: url({{car.pic}});" ng-show="car.pic" class="recent-car"></div>
+                    <div class="clearfix"></div>
+                    <h4 ng-show="car.year">{{car.year}} {{car.make}} {{car.model}}</h4>
+                    <img ng-show="car.price" src="img/blue-tag.png" alt="price tag" />
+                    <h5 ng-show="car.price">{{car.price}}</h5>
+                  </div>
+                </a>
               </div><!-- item -->
 
-              <div id="slide-3" ng-hide="true" class="item">
+            <!--  <div id="slide-3" ng-hide="true" class="item">
                 <div class="recent-wrapper" ng-show="{{car.k > 7}}" ng-repeat="car in cars" id="item-3-{{car.k}}">
                   <div class="recent-car"></div>
                   <h4>{{car.year}} {{car.make}} {{car.model}}</h4>
-
                   <img src="img/blue-tag.png" alt="price tag" />
                         <h5>{{car.price}}</h5>
                 </div>
-              </div><!-- item -->
+              </div>  -->
 
        <ol class="carousel-indicators">
                   <li id="circle-1" data-target="#my-slider" data-slide-to="0" class="active"></li>
@@ -87,24 +77,16 @@
                   </a></span>
               </div><!-- carousel-inner-->
             </div><!-- my-slider -->
-  </div>
+          </div>
         </div>
 
 
-          <p id="recent-line-bottom-right">
-
-          </p>
+          <p id="recent-line-bottom-right"></p>
       </div><!-- featured -->
 
-<div class="container">
-
-
-          <div id="recent-line-bottom-left"></div>
-
-</div>
-
-
-
+  <div class="container">
+    <div id="recent-line-bottom-left"></div>
+  </div>
 </section>
 
 
